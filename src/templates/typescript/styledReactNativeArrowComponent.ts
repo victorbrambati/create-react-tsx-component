@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 
 import { Container } from './styles';
 
-const ${ componentName }: React.FC = () => {
+const ${ componentName } = () => {
   return (
     <Container>
       <Text>${ componentName }</Text>
