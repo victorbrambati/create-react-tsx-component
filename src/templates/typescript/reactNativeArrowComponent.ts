@@ -1,11 +1,11 @@
-export default (componentName: string) => (
-`import React from 'react';
+export default (componentName: string) =>
+  `import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const ${ componentName }: React.FC = () => {
+const ${componentName} = () => {
   return (
     <View style={ styles.container }>
-      <Text style={ styles.title }>${ componentName }</Text>
+      <Text style={ styles.title }>${componentName}</Text>
     </View>
   );
 }
@@ -24,6 +24,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ${ componentName };
-`
-);
+export default ${componentName};
+`;
